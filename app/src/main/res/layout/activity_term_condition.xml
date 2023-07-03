@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".menu.TermCondition">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <ImageView
+                android:id="@+id/btnTermClose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/ic_close_white"/>
+
+            <TextView
+                android:id="@+id/acntinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/action_term_condition"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/term1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Terms and Conditions and Agreement"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/term2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Introduction"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term3"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/term_condition1"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term4"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="1. Data Collection"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term5"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/term_condition2"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term6"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="2. Service Description"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term7"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/term_condition3"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/term8"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="3. Payment and Subscription term"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term9"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/term_condition4"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term10"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term9"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="4. User Conduct and Responsibilities"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term11"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/term_condition5"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term12"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term11"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="5. Disclaimers and Limitations of Liability"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term13"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/term_condition6"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term14"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="6. Termination"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term15"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term14"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/term_condition7"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term16"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term15"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="7. Contact Information"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/term17"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/term16"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/term_condition8"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

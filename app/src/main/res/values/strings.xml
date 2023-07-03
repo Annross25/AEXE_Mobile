@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Aexe</string>
+    <string name="title_activity_navigation_drawer">Navigation_Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_privacy_policy">Privacy Policy</string>
+    <string name="action_term_condition">Terms and Conditions</string>
+    <string name="action_faqs">Frequently Asked Questions (FAQs)</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_profile">Profile</string>
+    <string name="menu_feed">News Feed</string>
+    <string name="menu_exercise">Augmented Reality</string>
+    <string name="menu_chat">Chats</string>
+    <string name="menu_support">Help and Support</string>
+    <string name="menu_logout">Logout</string>
+
+    //About Us Fragment
+    <string name="address">#47 CRJM PILAR MORNING BREEZE Brgy. 085, Dist. 1, Caloocan City Caloocan, Philippines, 1400</string>
+    <string name="facebook"><a href="fb.com/Zamora Fitness Drive and Wellness Center">Zamora Fitness Drive and Wellness Center</a></string>
+    <string name="gmail"><a href="zamorafitnessdrive@gmail.com">zamorafitnessdrive@gmail.com</a></string>
+    <string name="title_faqs">FAQs</string>
+    <string name="title_activity_policy">Policy</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    //Privacy Policy
+    <string name="privacy_policy">Our website application collects personal information, such as name, and email address from users for the purpose of improving customer service, providing a personalized user experience, processing payments, and sending relevant updates. We are committed to safeguarding this information and will not sell, trade, or rent it to third parties. We may share non-personal demographic information with trusted partners and comply with legal requirements. By using our application, you agree to this Privacy Policy. For any inquiries, please contact us at 09062447988 or email us at zamorafitnessdrive@gmail.com.</string>
+
+    //Terms and Condition
+    <string name="term_condition1">Methods of Research Aexe: An Augmented Reality Instructor Mobile Application on A Vigorous Lifestyle for Zamora Fitness Drive and Wellness Center built as free application for Zamora Fitness Drive and Wellness Center. </string>
+    <string name="term_condition2"> This page is to inform visitors about the policies for collecting, using, and disclosing personal information if they choose to use the AEXE application. If the user uses this application, AEXE, then the user agrees to the collection and use of data in accordance with this policy.
+
+The application collects personal information in order to provide and improve the service. The application does not use or share users’ information with anyone else.
+
+Unless otherwise defined in this Privacy Policy, the terminology used in this Privacy Policy has the same meaning as in our Terms and Conditions, which are available at AEXE.</string>
+    <string name="term_condition3">The AEXE application has augmented reality as an instructor, and that is being used to help the users perform the proper way of exercising. The exercises that are being recommended are based on the computed body mass index (BMI). The AEXE application has a profile where users can access personal information. Also, it has a news feed where the user can post pictures and see other users posts. Help and Support, where the user can see the location, contact details, email account, and floating chat messaging of the Zamora Fitness Drive and Wellness Center. </string>
+    <string name="term_condition4">AEXE is not collecting payment upon registration on the application. Payment must be conducted and collected in the gym. After paying, the admin must create an account and give it to the customer who will be using the AEXE application. The user, after paying a membership fee and being registered by the admin, is now officially a member of Zamora Fitness Drive and Wellness Center and can now access the AEXE application. The membership costs: five hundred pesos (500 PHP), which is good for one (1) year, and every session costs thirty pesos (30.00 PHP) per day. For non-members, every session costs only fifty pesos (50.00 PHP).</string>
+    <string name="term_condition5">The users should be follow the instructions that will appear right before the exercise starts. The users need to follow the proper position and execution during the exercise to avoid injuries.</string>
+    <string name="term_condition6">AEXE and Zamora Fitness Drive and Wellness Center are not liable for any injuries that the user encounters during exercise inside and outside the gym. The user must be aware of its health condition. If not, it is highly recommended to consult a personal doctor to determine if the user can execute the applications exercises.</string>
+    <string name="term_condition7">The AEXE application will terminate an account if the customer of Zamora Fitness Drive and Wellness Center does not renew its membership. However, if the customer avails membership again from the gym, Therefore, the previous account of the user will be retrieved from the archives by the admin. Thus, the customer can use the account again.</string>
+    <string name="term_condition8">The Frequently Asked Questions (FAQs) can be viewed on the website and in the AEXE mobile application. If users have questions regarding anything about the gym and the AEXE application, contact at 090624447988 for mobile and email in zamorafitnessdrive@gmail.com</string>
+    <string name="account_information">Account Information</string>
+
+    //Faqs
+    <string name="quest_faqs1">Where is the gym located?</string>
+    <string name="quest_faqs2">Gym opening and closing hours</string>
+    <string name="quest_faqs3">How much rates do the Gym offer?</string>
+    <string name="quest_faqs4">How can I purchased membership?</string>
+    <string name="quest_faqs5">Does the Gym have an age restriction or gender exception?</string>
+    <string name="quest_faqs6">What is Augmented Reality For?</string>
+    <string name="quest_faqs7">How can we assure that the app has security providing personal info?</string>
+    <string name="quest_faqs8">Contact Information</string>
+
+    <string name="ans_faqs1">The gym can be found in the 47 CRJM PILAR MORNING BREEZE Brgy.085, District 1, Caloocan City, Philippines, 1400</string>
+    <string name="ans_faqs2">It will start at 8am onwards and will be closed at 5pm</string>
+    <string name="ans_faqs3">The gym rates if the customer where onsite exercising it cost 50 pesos per day and the customers can use all the equipment. A customer will pay a cost of 500 per month if they would like to avail the membership and paying for a cost of 30 pesos per day instead of 50 pesos for using a gym. They can request guidance from an instructor, it is only for free.</string>
+    <string name="ans_faqs4">In purchasing a membership, they can ask on the admin in applying a membership and provide information about membership. Only official members can use the application.</string>
+    <string name="ans_faqs5">Anyone can use the gym and exercise except for the age below 15-10 years old.</string>
+    <string name="ans_faqs6">Augmented Reality is used to either visually alter natural environments or to provide users with additional information and possibilities visual changes. The primary advantage of AR is that it blends digital and three-dimensional (3D) components with a persons perception of the real world. Analyzing your surroundings and using triggers to display relevant information in the appropriate location in your field of view.</string>
+    <string name="ans_faqs7">Based on Republic Act 10173, the Data Privacy Act of 2012. AN ACT PROTECTING INDIVIDUAL PERSONAL INFORMATION IN INFORMATION AND COMMUNICATIONS SYSTEMS IN THE GOVERNMENT AND THE PRIVATE SECTOR, CREATING FOR THIS PURPOSE A NATIONAL PRIVACY COMMISSION, AND FOR OTHER PURPOSES. Yes, application has a privacy policy which can be found when registering. We assure that it is only between the system and the customer’s matter.</string>
+    <string name="ans_faqs8">Contact us thru our phone number (09062447988) and our email at zamorafitnessdrive@gmail.com or inform us on our social media account, facebook.com/zamorafitnessdriveandwellnesscenter.</string>
+
+    //Congratulatory Message for completing exercises for the day
+    <string name="congratulatory_message">Congratulations on completing your workout for the day! Your dedication and hard work are paying off. Keep up the fantastic effort and continue to push your limits. Remember, each step forward brings you closer to your goals. Youve got this!</string>
+
+    <string name="fb_description">Full-body exercises are workouts that engage multiple muscle groups and provide a comprehensive training stimulus for the entire body. Beginner Level Maximum of 1 min</string>
+    <string name="abs_description">Abs exercises often involve flexing or contracting the abdominal muscles, either through various forms of body movements or by using specific equipment or resistance.. Beginner Level Maximum of 1 min</string>
+    <string name="chest_description">Chest exercises aim to strengthen, tone, and develop the chest muscles for improved upper body strength, aesthetics, and functional movement.. Beginner Level Maximum of 1 min</string>
+    <string name="legs_description">Leg exercises refer to a category of exercises that specifically target the muscles of the lower body, primarily the muscles of the legs, including the quadriceps, hamstrings, glutes, calves, and other supporting muscles. Beginner Level Maximum of 1 min</string>
+    <string name="shoulder_description">Shoulder exercises refer to a category of exercises specifically designed to target and strengthen the muscles of the shoulder complex. Beginner Level Maximum of 1 min</string>
+
+</resources>

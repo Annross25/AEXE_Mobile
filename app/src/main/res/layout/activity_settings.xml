@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".menu.Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/ic_arrow_back_white" />
+
+            <TextView
+                android:id="@+id/acntinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/account_information"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <Button
+                android:id="@+id/choosefile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile"
+                android:layout_centerHorizontal="true"
+                android:text="Choose File"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/txtInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@id/choosefile"
+                android:text="No file choosen"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <!--First Name-->
+            <TextView
+                android:id="@+id/lbl_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choosefile"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:text="First Name"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_fname"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_firstname"
+                android:layout_marginStart="25dp"
+                android:hint="First Name"
+                android:textSize="18dp" />
+
+            <!--Last Name-->
+            <TextView
+                android:id="@+id/lbl_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choosefile"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/lbl_firstname"
+                android:text="Last Name"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_lname"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_firstname"
+                android:layout_marginStart="40dp"
+                android:layout_toRightOf="@id/et_fname"
+                android:hint="First Name"
+                android:textSize="18dp" />
+
+            <!--Email-->
+            <TextView
+                android:id="@+id/lbl_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_fname"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_email"
+                android:layout_marginStart="25dp"
+                android:hint="Email"
+                android:textSize="18dp" />
+
+            <!--Date of Birth-->
+            <TextView
+                android:id="@+id/lbl_bdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_email"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Date of Birth"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_bdate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_bdate"
+                android:layout_marginStart="25dp"
+                android:hint="Date of Birth"
+                android:textSize="18dp" />
+
+            <!--Gender-->
+            <TextView
+                android:id="@+id/lbl_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_email"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/lbl_bdate"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_gender"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_gender"
+                android:layout_marginStart="40dp"
+                android:layout_toRightOf="@id/et_bdate"
+                android:hint="Gender"
+                android:textSize="18dp" />
+
+            <!--Address-->
+            <TextView
+                android:id="@+id/lbl_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_bdate"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_address"
+                android:layout_marginStart="25dp"
+                android:hint="Address"
+                android:textSize="18dp" />
+
+            <!--Phone Number-->
+            <TextView
+                android:id="@+id/lbl_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_address"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_num"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_num"
+                android:layout_marginStart="25dp"
+                android:hint="Phone Number"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/changepass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_num"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Change Password"
+                android:textColor="@color/maroon"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <!--Current Password-->
+            <TextView
+                android:id="@+id/lbl_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changepass"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:text="Current Password"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_current"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_current"
+                android:layout_marginStart="25dp"
+                android:hint="Current Password"
+                android:textSize="18dp" />
+
+            <!--New Password-->
+            <TextView
+                android:id="@+id/lbl_newpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_current"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Enter New Password"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_newpass"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_newpass"
+                android:layout_marginStart="25dp"
+                android:hint="Enter New Password"
+                android:textSize="18dp" />
+
+            <!--Re-Enter New Password-->
+            <TextView
+                android:id="@+id/lbl_reenterpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_newpass"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Re-Enter New Password"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_reenterpass"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_reenterpass"
+                android:layout_marginStart="25dp"
+                android:hint="Re-Enter New Password"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/et_reenterpass"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:background="#AEA9A9"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_reenterpass"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/btn_cancel"
+                android:background="@color/maroon"
+                android:text="Save all changes"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

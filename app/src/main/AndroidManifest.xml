@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/lg_aexe"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/lg_aexe"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AugmentedExercise"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.login.Conditions_Login"
+            android:exported="false" />
+        <activity
+            android:name=".menu.Faqs"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".menu.TermCondition"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.slideshow.Calendar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.support.Map_Larger_Image"
+            android:exported="false" />
+        <activity
+            android:name=".ui.support.Gym_Larger_Image"
+            android:exported="false" />
+        <activity
+            android:name=".menu.Settings"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gallery.LargerImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.Change_DP"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gallery.Video_Post"
+            android:exported="false" />
+        <activity
+            android:name=".menu.Policy"
+            android:exported="false"
+            android:label="@string/title_activity_policy"
+            android:theme="@style/Theme.AugmentedExercise.NoActionBar" />
+        <activity
+            android:name=".workout.Shoulder_Exercises_Obese"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Shoulder_Exercises_Overweight"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Shoulder_Exercises_Normal"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Leg_and_Butt_Exercises_Obese"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Leg_and_Butt_Exercises_Overweight"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Leg_and_Butt_Exercises_Normal"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Chest_Exercises_Obese"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Chest_Exercises_Overweight"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Chest_Exercises_Normal"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Abs_Exercises_Obese"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Abs_Exercises_Overweight"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Abs_Exercises_Normal"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Shoulder_Exercises_Underweight"
+            android:exported="false" />
+        <activity
+            android:name=".workout.LegAndButt_Exercises_Underweight"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Chest_Exercises_Underweight"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Abs_Exercises_Underweight"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Fullbody_Exercises_Normal"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Fullbody_Exercises_Underweight"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Fullbody_Exercises_Obese"
+            android:exported="false" />
+        <activity
+            android:name=".workout.Fullbody_Exercises_Overweight"
+            android:exported="false" />
+        <activity
+            android:name=".exercises.Senior_Exercises"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chat.ChatDetailActivityUser"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gallery.Item_post"
+            android:exported="false" />
+        <activity
+            android:name=".bmi_module.BMI_Senior"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".bmi_module.BMI_Obese"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".bmi_module.BMI_Overweight"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".bmi_module.BMI_Normal"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".bmi_module.BMI_Underweight"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.login.Login"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Navigation_Drawer"
+            android:exported="false"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Theme.AugmentedExercise.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.splash_screen.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

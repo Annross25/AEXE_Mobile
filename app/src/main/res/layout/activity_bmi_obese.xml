@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".bmi_module.BMI_Obese">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_arrow_back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btnOBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_before"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/txt_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OBESE"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/btnONext"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_next"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/Fullbody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/fullbody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_fullbody" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="25dp"
+                    android:clickable="false"
+                    android:text="FULL BODY WORKOUT"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="27sp" />
+
+                <ProgressBar
+                    android:id="@+id/pbFullbodyObese"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="18dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_progressbar" />
+
+                <TextView
+                    android:id="@+id/fb_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="-63dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:background="#C8C7C7"
+                    android:textAlignment="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/Abs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Fullbody"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/abs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_abs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:clickable="false"
+                    android:text="ABS WORKOUT"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="27sp" />
+
+                <ProgressBar
+                    android:id="@+id/pbAbsObese"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="18dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_progressbar" />
+
+                <TextView
+                    android:id="@+id/abs_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="-63dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:background="#C8C7C7"
+                    android:textAlignment="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/Chest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@id/Abs"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/chest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_chest" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:clickable="false"
+                    android:text="CHEST WORKOUT"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="27sp" />
+
+                <ProgressBar
+                    android:id="@+id/pbChestObese"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="18dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_progressbar" />
+
+                <TextView
+                    android:id="@+id/chest_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="-63dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:background="#C8C7C7"
+                    android:textAlignment="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/Leg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@id/Chest"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/leg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_leg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:clickable="false"
+                    android:text="LEG AND BUTT WORKOUT"
+                    android:textColor="@color/white"
+                    android:textSize="27sp" />
+
+                <ProgressBar
+                    android:id="@+id/pbLegsObese"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="18dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_progressbar" />
+
+                <TextView
+                    android:id="@+id/leg_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="-63dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:background="#C8C7C7"
+                    android:textAlignment="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/Shoulder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/Leg"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp">
+
+                <ImageButton
+                    android:id="@+id/shoulder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_shoulder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:clickable="false"
+                    android:text="SHOULDER AND BACK WORKOUT"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="27sp" />
+
+                <ProgressBar
+                    android:id="@+id/pbShoulderObese"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="18dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_progressbar" />
+
+                <TextView
+                    android:id="@+id/shoulder_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="-63dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:background="#C8C7C7"
+                    android:textAlignment="center"/>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
